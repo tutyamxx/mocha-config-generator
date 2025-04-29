@@ -25,7 +25,7 @@ npm install -g mocha-config-generator
 ## 💻 Usage
 
 ```bash
-mocha-config-generator [options]
+mocha-config-gen [options]
 ```
 
 ### Options
@@ -40,31 +40,31 @@ mocha-config-generator [options]
 *   Generate a YAML configuration file (default):
 
     ```bash
-    mocha-config-generator
+    mocha-config-gen
     ```
 
     or
 
     ```bash
-    mocha-config-generator --format yaml
+    mocha-config-gen --format yaml
     ```
 
 *   Generate a YML configuration file:
 
     ```bash
-    mocha-config-generator --formal yml
+    mocha-config-gen --formal yml
     ```
 
 *   Generate a JSON configuration file:
 
     ```bash
-    mocha-config-generator --format json
+    mocha-config-gen --format json
     ```
 
 *   Generate a JavaScript configuration file:
 
     ```bash
-    mocha-config-generator --format js
+    mocha-config-gen --format js
     ```
 
 ## ⚙️ Default Configuration Template
