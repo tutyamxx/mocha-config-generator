@@ -1,6 +1,6 @@
 {
   "name": "mocha-config-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "☕ Mocha CLI tool to generate a configuration file boilerplate that supports different output formats.",
   "bin": {
     "mocha-config-gen": "./index.js"

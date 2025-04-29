@@ -1,5 +1,6 @@
 # ☕ Mocha Config Generator
 
+<p align="center"><a href="https://nodei.co/npm/mocha-config-generator/"><img src="https://nodei.co/npm/mocha-config-generator.png"></a></a></p>
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
 </p>
