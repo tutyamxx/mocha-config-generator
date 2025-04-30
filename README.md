@@ -36,7 +36,8 @@ mocha-config-gen [options]
 
 **Examples:**
 
-* Configuration file is generated in the `directory` where the command is run
+* Configuration file is generated in the `directory` where the command is run.
+* For `jsonc` just generate normal `json` and rename the file.
 *   Generate a YAML configuration file (default):
 
     ```bash

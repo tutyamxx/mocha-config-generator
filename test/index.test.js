@@ -73,10 +73,7 @@ describe('Testing CLI behavior', () => {
         process.argv = [originalArgv[0], originalArgv[1]];
     });
 
-    beforeAll(() => {
-        jest.spyOn(console, 'log').mockImplementation(() => {});
-        jest.spyOn(process, 'cwd').mockReturnValue('/mock/path');
-    });
+    beforeAll(() => jest.spyOn(console, 'log').mockImplementation(() => {}));
 
     afterAll(() => {
         console.log.mockRestore();
