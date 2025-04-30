@@ -2,7 +2,7 @@
 
 /**
  *  mocha-config-generator - ☕ Mocha CLI tool to generate a configuration file boilerplate that supports different output formats.
- *  @version: v1.0.3
+ *  @version: v1.0.4
  *  @link: https://github.com/tutyamxx/mocha-config-generator
  *  @license: MIT
  **/
@@ -12,14 +12,14 @@ const fs = require('fs');
 const path = require('path');
 const { hideBin } = require('yargs/helpers');
 
-const ANSI_Brown = '\x1b[33m';
-const ANSI_Reset = '\x1b[0m';
+const AnsiBrown = '\x1b[33m';
+const AnsiReset = '\x1b[0m';
 
 // --| Default configuration file with the following default settings as boilerplate, most projects only need this
 const defaultMochaConfig = {
     diff: true,
     spec: 'test/**/*.spec.js',
-    extension: [ 'js', 'cjs', 'mjs'],
+    extension: ['js', 'cjs', 'mjs'],
     timeout: 4000,
     reporter: 'spec',
     require: ['@babel/register'],
@@ -49,9 +49,10 @@ const convertToFormat = (config, fileFormat) => {
         default:
             return jsYaml.dump(config);
     }
-}
+};
 
 const runMochaConfigCLI = () => {
+    // eslint-disable-next-line no-undef
     const argv = yargs(hideBin(process.argv))
         .option('format', { description: 'Output format (yaml, yml, json, js)', default: 'yaml', type: 'string', choices: ['yaml', 'yml', 'json', 'js'] })
         .help()
@@ -67,8 +68,8 @@ const runMochaConfigCLI = () => {
     const configString = convertToFormat(defaultMochaConfig, format);
     fs.writeFileSync(filePath, configString);
 
-    console.log(`☕ Mocha configuration file generated: ${ANSI_Brown}${filePath}${ANSI_Reset}`);
-}
+    console.log(`☕ Mocha configuration file generated: ${AnsiBrown}${filePath}${AnsiReset}`);
+};
 
 module.exports = { convertToFormat, runMochaConfigCLI, defaultMochaConfig };
 
