@@ -1,6 +1,6 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
-const { convertToFormat, runMochaConfigCLI, defaultMochaConfig } = require('../index');
+const { convertToFormat, runMochaConfigCLI, defaultMochaConfig } = require('../bin/index');
 const path = require('path');
 
 jest.mock('fs');
