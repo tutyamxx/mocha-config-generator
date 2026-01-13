@@ -1,6 +1,6 @@
 {
   "name": "mocha-config-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "☕ Mocha CLI tool to generate a configuration file boilerplate that supports different output formats.",
   "bin": {
     "mocha-config-gen": "./bin/index.js"
@@ -18,7 +18,6 @@
     "type": "git",
     "url": "https://github.com/tutyamxx/mocha-config-generator"
   },
-  "homepage": "https://github.com/tutyamxx/mocha-config-generator",
   "author": "tuty",
   "license": "ISC",
   "type": "commonjs",
@@ -27,6 +26,6 @@
     "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^30.2.0"
   }
 }
