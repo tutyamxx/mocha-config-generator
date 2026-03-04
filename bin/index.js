@@ -2,7 +2,7 @@
 
 /**
  *  mocha-config-generator - ☕ Mocha CLI tool to generate a configuration file boilerplate that supports different output formats.
- *  @version: v1.0.8
+ *  @version: v1.0.9
  *  @link: https://github.com/tutyamxx/mocha-config-generator
  *  @license: MIT
  **/
